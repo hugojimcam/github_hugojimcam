@@ -1,1 +1,11 @@
 # github_hugojimcam
+
+CT 120 project 1:
+
+Original https://editor.p5js.org/hugojimcam/full/9rae5yyKg
+
+Updated https://editor.p5js.org/hugojimcam/full/hKgKfCfeR
+
+Documentation:
+
+The project I decided to update was the final project for Professor Sal's class last quarter. I wanted to change a few things I didn't complete last quarter because I ran out of time. The first thing I changed was how my portrait moves so it can wipe the screen clean. I also made the wave functions stretch the whole screen. I then deleted the circles around it because it looked cluttered. I also changed the color scheme to light blue so everything is easier for the eyes. Looking at the code I wrote weeks ago, it wasn't very clear at first. I had to refresh myself and was thankful for my comments and the internet for help. The main thing I wish I had done initially was to move my portrait to the center and make it move when I pressed and held a key. I also wish I had made the wave functions across the whole screen because of a gap showing. I was stuck changing the color scheme because I had to figure out the correct numbers, and my code wasn't obvious. I had items named red, green, and blue, which confused the editor, and I had many places to change colors. 
