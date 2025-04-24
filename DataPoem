@@ -1,0 +1,38 @@
+{
+    "title": "Stability?",
+    "themes": {
+        "Wounds": "Pain and recovery.",
+        "Trauma": "Psychological impact of a event."
+    },
+    "Acts": {
+        "Act 1": [
+            "Are you at peace?",
+            "Your mind is at ease, your worries are in the wind.",
+            "The birds are chirping but…",
+            "You get a call, and then it's over.",
+            "The peace you had was just a trick."
+        ],
+        "Act 2": [
+            "Your mind is running, what can you do?",
+            "Eat?",
+            "Walk?",
+            "Breath?",
+            "How will you know if your next interaction with that person is safe?",
+            "Anxious?",
+            "Stressed?",
+            "Not yourself?"
+        ],
+        "Act 3": [
+            "It’s been too long since your mind is at ease, with your worries in the wind, and the birds chirping.",
+            "The next day, you say…",
+            "This time will be different.",
+            "It's all ok.",
+            "And it is, until it isn’t."
+        ],
+        "Act 4": [
+            "You start working hard to be at peace, and then suddenly wake up one day full of relief.",
+            "The next time it happens, everything will be okay because you are now as stable as on a good day.",
+            "It feels weird, and it's not perfect, but now you have found more inner strength."
+        ]
+    }
+}
