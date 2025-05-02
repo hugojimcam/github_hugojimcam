@@ -20,6 +20,12 @@ https://github.com/hugojimcam/github_hugojimcam/blob/main/RandomNumberGame
 
 Documentation: 
 
+![image](https://github.com/user-attachments/assets/dd7fb5a0-38a7-4f43-9947-f9dab3196a0f)
+![image](https://github.com/user-attachments/assets/4b460ef2-14e1-41ff-abb7-1ec7a6f4da81)
+![image](https://github.com/user-attachments/assets/fa500548-8cd1-42a1-9a9c-26280a18d482)
+
+
+
 
 For my project, I wanted to try out Python, but I found that I wasn't creating anything I liked, so I pivoted and used Eclipse. I want to revisit Eclipse, which I learned about in community college, after learning more Java code using p5.js. I wanted to make something interactive, so I decided to make a random number game. In the game, pick a number between 1 and ..., there are multiple levels, and you get a certain number of guesses. Depending on how fast you answer, you get a certain number of cool points. 
 
