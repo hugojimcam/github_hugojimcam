@@ -1,0 +1,99 @@
+package test;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class random {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        Random rand = new Random(); 
+        
+        boolean playAgain; 
+        int highScore = 0; 
+        
+        do { 
+            int maxNum = 100;
+            int maxTries = Integer.MAX_VALUE; 
+
+            System.out.println("Choose difficulty: Easy (e), Medium (m), Hard (h):");
+            char difficulty = scanner.next().toUpperCase().charAt(0); 
+            if (difficulty == 'M') {
+                maxNum = 200;
+                maxTries = 10; 
+            } else if (difficulty == 'H') {
+                maxNum = 300;
+                maxTries = 15;
+            }
+
+            int compNum = rand.nextInt(maxNum) + 1;
+            int userGuess = -1;
+            int guessCount = 0;
+            int coolPoints = 1000;
+            boolean hintUsed = false;
+
+            System.out.println("I'm thinking of a number between 1 and " + maxNum + ".");
+            System.out.println("You can type 'hint' once per game for a clue.");
+
+            while (compNum != userGuess) {
+                if (guessCount >= maxTries) {
+                    System.out.println("You've run out of guesses! The correct number was: " + compNum);
+                    coolPoints = 0;
+                    break;
+                }
+
+                System.out.print("Enter your guess: ");
+                String input = scanner.next();
+
+                if (input.equalsIgnoreCase("hint")) {
+                    if (!hintUsed) {
+                        System.out.println("Hint: The number is " + (compNum % 2 == 0 ? "even." : "odd."));
+                        hintUsed = true;
+                        continue;
+                    } else {
+                        System.out.println("Sorry, you already used your hint.");
+                        continue;
+                    }
+                }
+
+                try {
+                    userGuess = Integer.parseInt(input);
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Enter a number between 1 and " + maxNum + ".");
+                    continue;
+                }
+
+                if (userGuess < 1 || userGuess > maxNum) {
+                    System.out.println("Out of range! Enter a number between 1 and " + maxNum + ".");
+                    continue;
+                }
+
+                guessCount++;
+                coolPoints -= 10;
+
+                if (userGuess < compNum) {
+                    System.out.println("Too low.");
+                } else if (userGuess > compNum) {
+                    System.out.println("Too high.");
+                }
+            }
+
+            if (compNum == userGuess) {
+                System.out.println("Congrats! You guessed the number in " + guessCount + " tries.");
+                System.out.println("You earned " + coolPoints + " cool points.");
+                if (coolPoints > highScore) {
+                    highScore = coolPoints;
+                    System.out.println("New high score!");
+                }
+            }
+
+            System.out.print("Do you want to play again? (Y/N): ");
+            char answer = scanner.next().charAt(0);
+            playAgain = (answer == 'y' || answer == 'Y');
+
+        } while (playAgain);
+
+        System.out.println("Thanks for playing! Your best score was: " + highScore);
+        scanner.close();
+    }
+}
